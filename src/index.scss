@@ -43,7 +43,9 @@ $plex-mono: string.unquote(
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  // Exactly the header height (3rem): the previous section's divider ends up
+  // hidden under the header instead of showing as a second line.
+  scroll-padding-top: 3rem;
 }
 
 body {
@@ -145,6 +147,17 @@ body {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+// Last section is short: give it a full viewport height (minus the 3rem
+// header) so the "Contact" nav link can scroll it to the top of the page.
+#contact {
+  min-height: calc(100vh - 3rem);
+  min-height: calc(100dvh - 3rem);
+}
+
+.contact__message {
+  margin-bottom: $spacing-07;
 }
 
 .contact__link {

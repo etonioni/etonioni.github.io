@@ -140,7 +140,8 @@ export default function App() {
         </Section>
 
         <Section id="contact" title="Contact Me">
-          <Column sm={4} md={8} lg={16}>
+          <Column sm={4} md={8} lg={12}>
+            <p className="prose contact__message">{contact.message}</p>
             <Link
               className="contact__link"
               href={contact.linkedin}

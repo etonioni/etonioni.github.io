@@ -196,5 +196,7 @@ export const tools = [
 ];
 
 export const contact = {
+  message:
+    'I enjoy exchanging ideas with people who build software. Whether it’s a project, a question, or just a chat about tech, drop me a message.',
   linkedin: 'https://www.linkedin.com/in/efremtonioni/',
 };
