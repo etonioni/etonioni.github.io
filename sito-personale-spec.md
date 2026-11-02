@@ -21,13 +21,13 @@ Di seguito la struttura del sito
 
 ##Headline
 
-	Result-driven professional with many years of multi-faceted experience in the software industry. 
+	Results-driven professional with many years of multifaceted experience in the software industry. 
 
 
 ##Projects I've Worked On
 
 ###Managing Sales Orders with Spring
-	I developed the backend using Spring Boot, structuring it using a layered architecture.
+	I developed the backend using Spring Boot, structuring it with a layered architecture.
 	Data Model: I defined the entities (Order, OrderItem, Customer, Product) using Spring Data JPA on PostgreSQL, mapping the one-to-many relationships between orders and individual line items.
 	Business Logic: I implemented an OrderService with @Transactional to validate inventory availability, calculate taxes and totals, and manage the order state machine (Draft, Paid, Shipped, Canceled).
 	REST API: I exposed endpoints using Spring Web (@RestController) for creating, tracking, and deleting orders.
@@ -62,10 +62,10 @@ Di seguito la struttura del sito
 
 ###Debate on AI
 	When it comes to AI, I often hear contrasting opinions. Some believe that AI does things for us, with both positive and negative consequences. Others oppose its use because it makes us lose the habit of thinking for ourselves. Still others say that one day it will be sentient like humans.
-	I’d like to add a perspective—perhaps a bit unconventional. Today, AI lacks two components of the human mind: desires and fears. As long as this 	remains true, using AI allows us to have something we cannot have through any other means. A dialogue that allows us to organize our thoughts, eliminate contradictions, and fill in the gaps. The idea that emerges is exactly ours—precisely the one we wanted, had we had the time to perfect it. If the dialogue had taken a different course, with another person, it would have led us toward a different idea. Ultimately, our idea—but only a compromise.
+	I’d like to add a perspective—perhaps a bit unconventional. Today, AI lacks two components of the human mind: desires and fears. As long as this 	remains true, using AI allows us to have something we cannot have through any other means: a dialogue that allows us to organize our thoughts, eliminate contradictions, and fill in the gaps. The idea that emerges is exactly ours—precisely the one we wanted, had we had the time to perfect it. If the dialogue had taken a different course, with another person, it would have led us toward a different idea. Ultimately, our idea—but only a compromise.
 
 ###Brooks's Law
-	A “smart” colleague once told me: Adding developers to a project that’s behind schedule multiplies the communication channels and ties up senior staff in meetings, delaying the release. To overcome this constraint, five strategies are needed:
+	A “smart” colleague once told me: adding developers to a project that’s behind schedule multiplies the communication channels and ties up senior staff in meetings, delaying the release. To overcome this constraint, five strategies are needed:
  	1 - Cut the scope: Release a Minimum Viable Product right away, eliminating non-essential features.
 	2 - Decouple the architecture: Establish stable APIs and contracts to enable parallel work without constant coordination.
  	3 - Protect the critical path: Use the “surgical” model: a lead developer focused on the core code, shielded from bureaucracy and mentoring.
@@ -82,7 +82,7 @@ Di seguito la struttura del sito
 	As for React, I can say that it has a vast ecosystem, and its architecture—based on reusable components—avoids unnecessary repetition. The declarative model offers great flexibility and high performance when updating user interfaces. If I had to offer a criticism, I’d say that managing re-renders and hooks can become complex.
 
 ###Android
-	As for Android, I have to say it dominates the global market. The ecosystem is open. But I prefer developing in Java to modern development with Kotlin. It also offers extreme flexibility in terms of hardware and a release process suited to the enterprise market. If I had to offer a criticism, I’d say there’s some fragmentation among devices, screens, and OS versions, which complicates testing and maintenance.
+	As for Android, I have to say it dominates the global market. The ecosystem is open, and it offers extreme flexibility in terms of hardware and a release process suited to the enterprise market. Personally, I prefer developing in Java to modern development with Kotlin. If I had to offer a criticism, I’d say there’s some fragmentation among devices, screens, and OS versions, which complicates testing and maintenance.
 
 ###Docker
 	As for Docker, I have to say that it offers absolute portability, eliminates the “it works on my machine” problem, is very lightweight, and starts up instantly compared to traditional virtual machines. It has a very extensive ecosystem that simplifies alignment between development and production environments. If I had to offer a criticism, I’d say it has a bit of a performance overhead, and resource consumption on macOS and Windows is high. Managing data persistence is a bit complex, as is advanced networking.

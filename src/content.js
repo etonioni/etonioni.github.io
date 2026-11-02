@@ -7,14 +7,14 @@ export const profile = {
   site: 'tonio.work',
   role: 'Software Developer',
   headline:
-    'Result-driven professional with many years of multi-faceted experience in the software industry.',
+    'Results-driven professional with many years of multifaceted experience in the software industry.',
 };
 
 export const projects = [
   {
     title: 'Managing Sales Orders with Spring',
     body: [
-      { p: 'I developed the backend using Spring Boot, structuring it using a layered architecture.' },
+      { p: 'I developed the backend using Spring Boot, structuring it with a layered architecture.' },
       {
         ul: [
           {
@@ -122,7 +122,7 @@ export const notes = [
         p: 'When it comes to AI, I often hear contrasting opinions. Some believe that AI does things for us, with both positive and negative consequences. Others oppose its use because it makes us lose the habit of thinking for ourselves. Still others say that one day it will be sentient like humans.',
       },
       {
-        p: 'I’d like to add a perspective—perhaps a bit unconventional. Today, AI lacks two components of the human mind: desires and fears. As long as this remains true, using AI allows us to have something we cannot have through any other means. A dialogue that allows us to organize our thoughts, eliminate contradictions, and fill in the gaps. The idea that emerges is exactly ours—precisely the one we wanted, had we had the time to perfect it. If the dialogue had taken a different course, with another person, it would have led us toward a different idea. Ultimately, our idea—but only a compromise.',
+        p: 'I’d like to add a perspective—perhaps a bit unconventional. Today, AI lacks two components of the human mind: desires and fears. As long as this remains true, using AI allows us to have something we cannot have through any other means: a dialogue that allows us to organize our thoughts, eliminate contradictions, and fill in the gaps. The idea that emerges is exactly ours—precisely the one we wanted, had we had the time to perfect it. If the dialogue had taken a different course, with another person, it would have led us toward a different idea. Ultimately, our idea—but only a compromise.',
       },
     ],
   },
@@ -130,7 +130,7 @@ export const notes = [
     title: 'Brooks’s Law',
     body: [
       {
-        p: 'A “smart” colleague once told me: Adding developers to a project that’s behind schedule multiplies the communication channels and ties up senior staff in meetings, delaying the release. To overcome this constraint, five strategies are needed:',
+        p: 'A “smart” colleague once told me: adding developers to a project that’s behind schedule multiplies the communication channels and ties up senior staff in meetings, delaying the release. To overcome this constraint, five strategies are needed:',
       },
       {
         ol: [
@@ -181,7 +181,7 @@ export const tools = [
     title: 'Android',
     body: [
       {
-        p: 'As for Android, I have to say it dominates the global market. The ecosystem is open. But I prefer developing in Java to modern development with Kotlin. It also offers extreme flexibility in terms of hardware and a release process suited to the enterprise market. If I had to offer a criticism, I’d say there’s some fragmentation among devices, screens, and OS versions, which complicates testing and maintenance.',
+        p: 'As for Android, I have to say it dominates the global market. The ecosystem is open, and it offers extreme flexibility in terms of hardware and a release process suited to the enterprise market. Personally, I prefer developing in Java to modern development with Kotlin. If I had to offer a criticism, I’d say there’s some fragmentation among devices, screens, and OS versions, which complicates testing and maintenance.',
       },
     ],
   },
