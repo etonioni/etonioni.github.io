@@ -13,7 +13,6 @@ export const profile = {
 export const projects = [
   {
     title: 'Managing Sales Orders with Spring',
-    tags: ['Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'Spring Security', 'JWT', 'Spring Events'],
     body: [
       { p: 'I developed the backend using Spring Boot, structuring it using a layered architecture.' },
       {
@@ -40,7 +39,6 @@ export const projects = [
   },
   {
     title: 'Warehouse Management with Android',
-    tags: ['Java', 'MVVM', 'CameraX', 'ML Kit', 'Room', 'Retrofit', 'WorkManager'],
     body: [
       {
         p: 'I developed the application in Java using an MVVM architecture and an offline-first approach for logistics contexts.',
@@ -83,7 +81,6 @@ export const projects = [
   },
   {
     title: 'Migrating from Talend to Python',
-    tags: ['Python', 'python-oracledb', 'pandas', 'Tkinter', 'Oracle ERP', 'AI'],
     body: [
       {
         p: 'The project migrated the complex ETL processes from Talend to a modular desktop solution written in Python, designed to extract, verify, and reconcile receipts and payments from the Oracle ERP system.',

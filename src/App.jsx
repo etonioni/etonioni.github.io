@@ -8,8 +8,6 @@ import {
   HeaderNavigation,
   Link,
   SkipToContent,
-  Tag,
-  Tile,
 } from '@carbon/react';
 import { LogoLinkedin } from '@carbon/icons-react';
 import { contact, notes, profile, projects, tools } from './content.js';
@@ -109,21 +107,14 @@ export default function App() {
         </header>
 
         <Section id="projects" title="Projects I've Worked On">
-          {projects.map((project) => (
-            <Column key={project.title} sm={4} md={8} lg={16}>
-              <Tile className="card">
+          <Column sm={4} md={8} lg={12}>
+            {projects.map((project) => (
+              <article key={project.title} className="note">
                 <h3 className="card__title">{project.title}</h3>
                 <Blocks blocks={project.body} />
-                <div className="tags">
-                  {project.tags.map((tag) => (
-                    <Tag key={tag} type="cool-gray" size="sm">
-                      {tag}
-                    </Tag>
-                  ))}
-                </div>
-              </Tile>
-            </Column>
-          ))}
+              </article>
+            ))}
+          </Column>
         </Section>
 
         <Section id="notes" title="Personal Notes">
@@ -138,14 +129,14 @@ export default function App() {
         </Section>
 
         <Section id="tools" title="Tools I Use">
-          {tools.map((tool) => (
-            <Column key={tool.title} sm={4} md={8} lg={8}>
-              <Tile className="card">
+          <Column sm={4} md={8} lg={12}>
+            {tools.map((tool) => (
+              <article key={tool.title} className="note">
                 <h3 className="card__title">{tool.title}</h3>
                 <ToolText text={tool.body[0].p} />
-              </Tile>
-            </Column>
-          ))}
+              </article>
+            ))}
+          </Column>
         </Section>
 
         <Section id="contact" title="Contact Me">
