@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
+import '@ibm/plex-mono/css/ibm-plex-mono-default.min.css';
 import './index.scss';
 
 createRoot(document.getElementById('root')).render(

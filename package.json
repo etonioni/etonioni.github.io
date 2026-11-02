@@ -1,5 +1,5 @@
 {
-  "name": "carbon-hello-world",
+  "name": "tonio-work",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@carbon/icons-react": "^11.91.0",
     "@carbon/react": "^1.117.0",
+    "@ibm/plex-mono": "^2.5.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

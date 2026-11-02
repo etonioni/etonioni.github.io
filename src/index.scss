@@ -1,1 +1,170 @@
-@use '@carbon/react';
+@use 'sass:string';
+
+// Carbon, loaded module by module: only the foundations and the components
+// actually used in App.jsx (UI Shell, Grid, Tile, Tag, Link).
+// If you add a Carbon component, add its styles below too.
+//
+// IBM Plex Mono is the only typeface. Font files come from @ibm/plex-mono
+// (imported in main.jsx), so Carbon's own @font-face output is disabled.
+$plex-mono: string.unquote(
+  "'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace"
+);
+
+@use '@carbon/react/scss/config' with (
+  $css--font-face: false
+);
+@use '@carbon/react/scss/type' with (
+  $font-families: (
+    'sans': $plex-mono,
+    'mono': $plex-mono,
+    'serif': $plex-mono,
+  )
+);
+@use '@carbon/react/scss/reset';
+@use '@carbon/react/scss/grid';
+@use '@carbon/react/scss/layer';
+@use '@carbon/react/scss/components/ui-shell';
+@use '@carbon/react/scss/components/tile';
+@use '@carbon/react/scss/components/tag';
+@use '@carbon/react/scss/components/link';
+
+@use '@carbon/react/scss/theme';
+@use '@carbon/react/scss/themes';
+@use '@carbon/react/scss/spacing' as *;
+
+// Light theme by default, dark theme when the system prefers it.
+:root {
+  @include theme.theme(themes.$white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme.theme(themes.$g100);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  background: theme.$background;
+  color: theme.$text-primary;
+}
+
+.site-content {
+  padding: 0;
+}
+
+.section {
+  padding-block: $spacing-10;
+  border-bottom: 1px solid theme.$border-subtle-01;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.section__title {
+  @include type.type-style('heading-04');
+  margin-bottom: $spacing-07;
+}
+
+.hero {
+  padding-block: $spacing-12 $spacing-10;
+  border-bottom: 1px solid theme.$border-subtle-01;
+}
+
+.hero__role {
+  @include type.type-style('label-02');
+  color: theme.$text-secondary;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: $spacing-05;
+}
+
+.hero__name {
+  @include type.type-style('fluid-display-01', true);
+  margin-bottom: $spacing-06;
+}
+
+.hero__headline {
+  @include type.type-style('fluid-heading-04', true);
+  color: theme.$text-secondary;
+  max-width: 40ch;
+}
+
+.card {
+  height: 100%;
+  margin-bottom: $spacing-05;
+}
+
+.card__title {
+  @include type.type-style('heading-03');
+  margin-bottom: $spacing-05;
+}
+
+.card__subtitle {
+  @include type.type-style('heading-compact-01');
+  margin-block: $spacing-05 $spacing-03;
+}
+
+.prose {
+  @include type.type-style('body-02');
+  max-width: 72ch;
+
+  p + p,
+  p + ul,
+  p + ol,
+  ul + p,
+  ol + p {
+    margin-top: $spacing-04;
+  }
+
+  ul,
+  ol {
+    padding-left: $spacing-06;
+  }
+
+  ul {
+    list-style: square;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li + li {
+    margin-top: $spacing-03;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.tags {
+  margin-top: $spacing-05;
+}
+
+.note {
+  margin-bottom: $spacing-09;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact__link {
+  @include type.type-style('heading-03');
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-03;
+}
+
+.footer {
+  @include type.type-style('helper-text-01');
+  color: theme.$text-helper;
+  padding-block: $spacing-07;
+}
