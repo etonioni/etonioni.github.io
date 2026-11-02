@@ -1,6 +1,16 @@
-tonio.work è una semplice presenza professionale, 
-che usa le tecnologie: carbon design sistem.
+tonio.work è una semplice presenza professionale di Efrem Tonioni,
+che usa le tecnologie: Vite, React, Carbon Design System.
 Tutto il sito deve usare il font IBM Plex Mono.
+Lingua del sito: solo inglese.
+
+Regole di aspetto
+	- Pagina singola, con barra di navigazione in alto: Projects, Notes, Tools, Contact.
+	- Tema chiaro o scuro in base alle impostazioni del sistema.
+	- Tutte le sezioni (Projects, Personal Notes, Tools I Use) hanno lo stesso layout: testo semplice in colonna,
+	  senza riquadri, sfondi grigi, bordi o etichette delle tecnologie.
+	- Titoli delle sezioni e titoli delle singole voci in grassetto, dimensione normale.
+	- In Tools I Use ogni strumento è diviso in "Strengths" e "Criticism".
+	- Icona della scheda del browser: icona "Carbon" del Carbon Design System.
 
 Di seguito la struttura del sito
 
@@ -79,6 +89,8 @@ Di seguito la struttura del sito
 
 
 ##Contact Me
+
+	I enjoy exchanging ideas with people who build software. Whether it’s a project, a question, or just a chat about tech, drop me a message.
 
 	https://www.linkedin.com/in/efremtonioni/
 
