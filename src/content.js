@@ -38,6 +38,6 @@ export const software = {
 export const contact = {
   message:
     'Questions, feedback, bug reports or ideas for new features? Write me an email, I read every message.',
-  // Forwarded to a private mailbox via email routing on the tonio.work DNS.
-  email: 'hello@tonio.work',
+  // Anonymous Proton mailbox. Planned: hello@tonio.work forwarded here via ImprovMX.
+  email: 'tonio.work@proton.me',
 };

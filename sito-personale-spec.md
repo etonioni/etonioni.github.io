@@ -35,4 +35,4 @@ Di seguito la struttura del sito
 
 	Questions, feedback, bug reports or ideas for new features? Write me an email, I read every message.
 
-	hello@tonio.work
+	tonio.work@proton.me
