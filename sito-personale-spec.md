@@ -7,7 +7,7 @@ Regole di aspetto
 	- Pagina singola, con barra di navigazione in alto: Software, Download, Contact.
 	  Sotto i 1056px le sezioni sono in un menu ad hamburger.
 	- Tema chiaro o scuro in base alle impostazioni del sistema.
-	- Tutte le sezioni (Software, Download, Contact Me) hanno lo stesso layout: testo semplice in colonna,
+	- Tutte le sezioni (Software, Download, Contact) hanno lo stesso layout: testo semplice in colonna,
 	  senza riquadri, sfondi grigi, bordi o etichette delle tecnologie.
 	- Titoli delle sezioni e titoli delle singole voci in grassetto, dimensione normale.
 	- Il nome del proprietario non compare da nessuna parte (testi, footer, titolo, meta tag).
@@ -34,7 +34,7 @@ Di seguito la struttura del sito
 	Windows x64 installer (.exe, 45 MB): https://github.com/tonio-work/postgres-fx/releases/download/3_1_24/PostgresFx-3.1.24-setup-x64.exe
 
 
-##Contact Me
+##Contact
 
 	Questions, feedback, bug reports or ideas for new features? Write me an email.
 
