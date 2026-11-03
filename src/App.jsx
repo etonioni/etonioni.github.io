@@ -14,7 +14,7 @@ import {
   SkipToContent,
 } from '@carbon/react';
 import { useState } from 'react';
-import { Email } from '@carbon/icons-react';
+import { Download, Email } from '@carbon/icons-react';
 import { contact, download, profile, software } from './content.js';
 
 const SECTIONS = [
@@ -150,7 +150,18 @@ export default function App() {
 
         <Section id="download" title="Download">
           <Column sm={4} md={8} lg={12}>
-            <Blocks blocks={download.body} />
+            <p className="prose">PostgresFx {download.version}</p>
+            {download.files.map((file) => (
+              <p key={file.href} className="download__file">
+                <Link
+                  className="download__link"
+                  href={file.href}
+                  renderIcon={Download}
+                >
+                  {file.label}
+                </Link>
+              </p>
+            ))}
           </Column>
         </Section>
 

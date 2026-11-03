@@ -1,4 +1,4 @@
-tonio.work è un sito anonimo per pubblicare software desktop gratuito (JavaFX) e ricevere contatti.
+tonio.work è un sito anonimo per pubblicare software gratuito (JavaFX) e ricevere contatti.
 Usa le tecnologie: Vite, React, Carbon Design System.
 Tutto il sito deve usare il font IBM Plex Mono.
 Lingua del sito: solo inglese (i testi italiani qui sotto sono di riferimento).
@@ -19,7 +19,7 @@ Come è composto ...
 
 ##Ruolo principale
 	Lead Role
-	Free desktop software
+	Free software
 
 
 ##Headline
@@ -36,15 +36,17 @@ Come è composto ...
 
 ##Download
 
-	I download per Windows e Linux (pacchetto .deb per Debian, Ubuntu e derivate) saranno disponibili qui a breve.
+	Installer per Windows x64 (.exe, 45 MB), versione 3.1.24.
 
-	Downloads for Windows and Linux (.deb package for Debian, Ubuntu and derivatives) will be available here soon.
+	PostgresFx 3.1.24
+
+	Windows x64 installer (.exe, 45 MB): https://github.com/tonio-work/postgres-fx/releases/download/3_1_24/PostgresFx-3.1.24-setup-x64.exe
 
 
 ##Contact Me
 
-	Domande, feedback, segnalazioni di bug o idee per nuove funzioni? Scrivimi un'email, leggo ogni messaggio.
+	Domande, feedback, segnalazioni di bug o idee per nuove funzioni? Scrivimi un'email.
 
-	Questions, feedback, bug reports or ideas for new features? Write me an email, I read every message.
+	Questions, feedback, bug reports or ideas for new features? Write me an email.
 
 	tonio.work@proton.me

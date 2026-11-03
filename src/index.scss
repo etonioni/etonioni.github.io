@@ -193,7 +193,12 @@ body {
   margin-bottom: $spacing-07;
 }
 
-.contact__link {
+.download__file {
+  margin-top: $spacing-05;
+}
+
+.contact__link,
+.download__link {
   @include type.type-style('heading-03');
   display: inline-flex;
   align-items: center;

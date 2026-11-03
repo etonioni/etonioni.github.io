@@ -1,6 +1,6 @@
 # tonio.work
 
-Sito anonimo per software desktop gratuito, online su **https://tonio.work**.
+Sito anonimo per software gratuito, online su **https://tonio.work**.
 
 Pagina singola costruita con Vite, React e [Carbon Design System](https://carbondesignsystem.com/).
 Tutto il sito usa il font IBM Plex Mono. I contenuti vengono da `sito-personale-spec.md`

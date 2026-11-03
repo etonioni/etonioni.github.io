@@ -4,7 +4,7 @@
 
 export const profile = {
   site: 'tonio.work',
-  role: 'Free desktop software',
+  role: 'Free software',
   // ASCII seascape shown in the hero, 72 characters wide: it is scaled to the full
   // page width. String.raw keeps the backslashes; the block starts and ends with a
   // newline (a trailing \ would escape the backtick), removed by slice(1, -1).
@@ -40,14 +40,21 @@ export const software = {
   },
 };
 
-// Placeholder until the app is released: then add the download links.
+// GitHub Releases of tonio-work/postgres-fx. The file name contains the version:
+// update href, label and version at every new release.
 export const download = {
-  body: [{ p: 'Downloads for Windows and Linux (.deb package for Debian, Ubuntu and derivatives) will be available here soon.' }],
+  version: '3.1.24',
+  files: [
+    {
+      label: 'Windows x64 installer (.exe, 45 MB)',
+      href: 'https://github.com/tonio-work/postgres-fx/releases/download/3_1_24/PostgresFx-3.1.24-setup-x64.exe',
+    },
+  ],
 };
 
 export const contact = {
   message:
-    'Questions, feedback, bug reports or ideas for new features? Write me an email, I read every message.',
+    'Questions, feedback, bug reports or ideas for new features? Write me an email.',
   // Anonymous Proton mailbox. Planned: hello@tonio.work forwarded here via ImprovMX.
   email: 'tonio.work@proton.me',
 };
