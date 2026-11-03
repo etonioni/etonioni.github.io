@@ -77,14 +77,6 @@ body {
   border-bottom: 1px solid theme.$border-subtle-01;
 }
 
-.hero__role {
-  @include type.type-style('label-02');
-  color: theme.$text-secondary;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: $spacing-05;
-}
-
 .hero__name {
   margin-bottom: $spacing-06;
   // Lets the ASCII art size itself on the width of this box (cqi units).

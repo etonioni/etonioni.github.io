@@ -4,7 +4,6 @@
 
 export const profile = {
   site: 'tonio.work',
-  role: 'Free software',
   // ASCII seascape shown in the hero, 72 characters wide: it is scaled to the full
   // page width. String.raw keeps the backslashes; the block starts and ends with a
   // newline (a trailing \ would escape the backtick), removed by slice(1, -1).

@@ -17,11 +17,6 @@ Regole di aspetto
 Come è composto ...
 
 
-##Ruolo principale
-	Lead Role
-	Free software
-
-
 ##Headline
 
 	Simple tools, free to use.

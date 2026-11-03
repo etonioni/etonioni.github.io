@@ -17,10 +17,6 @@ Regole di aspetto
 Di seguito la struttura del sito
 
 
-##Lead Role
-	Free software
-
-
 ##Headline
 
 	Simple tools, free to use.

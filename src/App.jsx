@@ -116,7 +116,6 @@ export default function App() {
         <header id="top" className="hero">
           <Grid>
             <Column sm={4} md={8} lg={16}>
-              <p className="hero__role">{profile.role}</p>
               <h1 className="hero__name">
                 <span className="visually-hidden">{profile.site}</span>
                 <pre className="hero__ascii-art" aria-hidden="true">

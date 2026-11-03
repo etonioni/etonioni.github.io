@@ -19,7 +19,7 @@ Tutto il sito usa il font IBM Plex Mono. I contenuti vengono da `sito-personale-
 | `public/CNAME` | Dominio personalizzato `tonio.work` |
 | `.github/workflows/deploy.yml` | Build e pubblicazione su GitHub Pages |
 
-Sezioni della pagina: introduzione (ruolo, mare con barca a vela in ASCII art, headline), Software,
+Sezioni della pagina: introduzione (mare con barca a vela in ASCII art, headline), Software,
 Download, Contact Me (email tonio.work@proton.me). La barra in alto porta alle sezioni; sotto i 1056px
 le sezioni sono in un menu ad hamburger.
 
