@@ -24,7 +24,7 @@ Di seguito la struttura del sito
 
 ##Software
 
-	A PostgreSQL client built in Java: schema browsing, a SQL editor with autocomplete, query execution, data editing, ER diagrams with reverse engineering and DDL generation, and schema comparison — all against self-contained portable PostgreSQL archives.
+	A PostgreSQL client: schema browsing, a SQL editor with autocomplete, query execution, data editing, ER diagrams with reverse engineering and DDL generation, and schema comparison.
 
 
 ##Download

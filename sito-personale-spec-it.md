@@ -24,9 +24,9 @@ Come è composto ...
 
 ##Software
 
-	Un client PostgreSQL scritto in Java: navigazione dello schema, editor SQL con autocompletamento, esecuzione di query, modifica dei dati, diagrammi ER con reverse engineering e generazione DDL, e confronto di schemi — il tutto su archivi PostgreSQL portatili e autonomi.
+	Un client PostgreSQL: navigazione dello schema, editor SQL con autocompletamento, esecuzione di query, modifica dei dati, diagrammi ER con reverse engineering e generazione DDL, e confronto di schemi.
 
-	A PostgreSQL client built in Java: schema browsing, a SQL editor with autocomplete, query execution, data editing, ER diagrams with reverse engineering and DDL generation, and schema comparison — all against self-contained portable PostgreSQL archives.
+	A PostgreSQL client: schema browsing, a SQL editor with autocomplete, query execution, data editing, ER diagrams with reverse engineering and DDL generation, and schema comparison.
 
 
 ##Download
