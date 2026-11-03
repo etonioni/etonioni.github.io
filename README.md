@@ -1,6 +1,6 @@
 # tonio.work
 
-Sito personale di Efrem Tonioni, online su **https://tonio.work**.
+Sito anonimo per software desktop gratuito, online su **https://tonio.work**.
 
 Pagina singola costruita con Vite, React e [Carbon Design System](https://carbondesignsystem.com/).
 Tutto il sito usa il font IBM Plex Mono. I contenuti vengono da `sito-personale-spec.md`
@@ -10,7 +10,7 @@ Tutto il sito usa il font IBM Plex Mono. I contenuti vengono da `sito-personale-
 
 | File | Contenuto |
 |---|---|
-| `src/content.js` | Tutti i testi: profilo, progetti, note, strumenti, contatti |
+| `src/content.js` | Tutti i testi: intestazione, software, contatti |
 | `src/App.jsx` | Layout della pagina |
 | `src/index.scss` | Tema, font e stili |
 | `src/main.jsx` | Avvio di React e import del font |
@@ -19,8 +19,9 @@ Tutto il sito usa il font IBM Plex Mono. I contenuti vengono da `sito-personale-
 | `public/CNAME` | Dominio personalizzato `tonio.work` |
 | `.github/workflows/deploy.yml` | Build e pubblicazione su GitHub Pages |
 
-Sezioni della pagina: introduzione (ruolo, nome, headline), Projects I've Worked On,
-Personal Notes, Tools I Use, Contact Me. La barra in alto porta alle sezioni.
+Sezioni della pagina: introduzione (ruolo, mare con barca a vela in ASCII art, headline), Software,
+Contact Me (email hello@tonio.work). La barra in alto porta alle sezioni; sotto i 1056px
+le sezioni sono in un menu ad hamburger.
 
 ## Scelte di design
 

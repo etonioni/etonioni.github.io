@@ -3,23 +3,24 @@ import {
   Content,
   Grid,
   Header,
+  HeaderMenuButton,
   HeaderMenuItem,
   HeaderName,
   HeaderNavigation,
   Link,
+  SideNav,
+  SideNavItems,
+  SideNavLink,
   SkipToContent,
 } from '@carbon/react';
-import { LogoLinkedin } from '@carbon/icons-react';
-import { contact, notes, profile, projects, tools } from './content.js';
+import { useState } from 'react';
+import { Email } from '@carbon/icons-react';
+import { contact, profile, software } from './content.js';
 
 const SECTIONS = [
-  { id: 'projects', label: 'Projects' },
-  { id: 'notes', label: 'Notes' },
-  { id: 'tools', label: 'Tools' },
+  { id: 'software', label: 'Software' },
   { id: 'contact', label: 'Contact' },
 ];
-
-const CRITICISM_MARKER = 'If I had to offer a criticism';
 
 function Inline({ item }) {
   if (typeof item === 'string') return item;
@@ -65,24 +66,21 @@ function Section({ id, title, children }) {
   );
 }
 
-function ToolText({ text }) {
-  const idx = text.indexOf(CRITICISM_MARKER);
-  if (idx === -1) return <Blocks blocks={[{ p: text }]} />;
-  return (
-    <div className="prose">
-      <h4 className="card__subtitle">Strengths</h4>
-      <p>{text.slice(0, idx).trim()}</p>
-      <h4 className="card__subtitle">Criticism</h4>
-      <p>{text.slice(idx).trim()}</p>
-    </div>
-  );
-}
-
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
-      <Header aria-label={profile.name}>
+      <Header aria-label={profile.site}>
         <SkipToContent />
+        {/* Carbon hides HeaderNavigation below the lg breakpoint (1056px):
+            on smaller screens the sections live in the hamburger side nav. */}
+        <HeaderMenuButton
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          onClick={() => setMenuOpen(!menuOpen)}
+          isActive={menuOpen}
+          aria-expanded={menuOpen}
+        />
         <HeaderName href="#top" prefix="">
           {profile.site}
         </HeaderName>
@@ -93,49 +91,45 @@ export default function App() {
             </HeaderMenuItem>
           ))}
         </HeaderNavigation>
+        <SideNav
+          aria-label="Sections"
+          expanded={menuOpen}
+          isPersistent={false}
+          onOverlayClick={() => setMenuOpen(false)}
+        >
+          <SideNavItems>
+            {SECTIONS.map((s) => (
+              <SideNavLink
+                key={s.id}
+                href={`#${s.id}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {s.label}
+              </SideNavLink>
+            ))}
+          </SideNavItems>
+        </SideNav>
       </Header>
 
       <Content id="main-content" className="site-content">
         <header id="top" className="hero">
           <Grid>
-            <Column sm={4} md={8} lg={12}>
+            <Column sm={4} md={8} lg={16}>
               <p className="hero__role">{profile.role}</p>
-              <h1 className="hero__name">{profile.name}</h1>
+              <h1 className="hero__name">
+                <span className="visually-hidden">{profile.site}</span>
+                <pre className="hero__ascii-art" aria-hidden="true">
+                  {profile.asciiArt}
+                </pre>
+              </h1>
               <p className="hero__headline">{profile.headline}</p>
             </Column>
           </Grid>
         </header>
 
-        <Section id="projects" title="Projects I've Worked On">
+        <Section id="software" title="Software">
           <Column sm={4} md={8} lg={12}>
-            {projects.map((project) => (
-              <article key={project.title} className="note">
-                <h3 className="card__title">{project.title}</h3>
-                <Blocks blocks={project.body} />
-              </article>
-            ))}
-          </Column>
-        </Section>
-
-        <Section id="notes" title="Personal Notes">
-          <Column sm={4} md={8} lg={12}>
-            {notes.map((note) => (
-              <article key={note.title} className="note">
-                <h3 className="card__title">{note.title}</h3>
-                <Blocks blocks={note.body} />
-              </article>
-            ))}
-          </Column>
-        </Section>
-
-        <Section id="tools" title="Tools I Use">
-          <Column sm={4} md={8} lg={12}>
-            {tools.map((tool) => (
-              <article key={tool.title} className="note">
-                <h3 className="card__title">{tool.title}</h3>
-                <ToolText text={tool.body[0].p} />
-              </article>
-            ))}
+            <Blocks blocks={software.body} />
           </Column>
         </Section>
 
@@ -144,12 +138,10 @@ export default function App() {
             <p className="prose contact__message">{contact.message}</p>
             <Link
               className="contact__link"
-              href={contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              renderIcon={LogoLinkedin}
+              href={`mailto:${contact.email}`}
+              renderIcon={Email}
             >
-              LinkedIn
+              {contact.email}
             </Link>
           </Column>
         </Section>
@@ -157,7 +149,7 @@ export default function App() {
         <footer className="footer">
           <Grid>
             <Column sm={4} md={8} lg={16}>
-              © {new Date().getFullYear()} {profile.name} · {profile.site}
+              © {new Date().getFullYear()} {profile.site}
             </Column>
           </Grid>
         </footer>
