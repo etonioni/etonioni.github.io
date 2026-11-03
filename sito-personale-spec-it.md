@@ -4,10 +4,10 @@ Tutto il sito deve usare il font IBM Plex Mono.
 Lingua del sito: solo inglese (i testi italiani qui sotto sono di riferimento).
 
 Regole di aspetto
-	- Pagina singola, con barra di navigazione in alto: Software, Contact.
+	- Pagina singola, con barra di navigazione in alto: Software, Download, Contact.
 	  Sotto i 1056px le sezioni sono in un menu ad hamburger.
 	- Tema chiaro o scuro in base alle impostazioni del sistema.
-	- Tutte le sezioni (Software, Contact Me) hanno lo stesso layout: testo semplice in colonna,
+	- Tutte le sezioni (Software, Download, Contact Me) hanno lo stesso layout: testo semplice in colonna,
 	  senza riquadri, sfondi grigi, bordi o etichette delle tecnologie.
 	- Titoli delle sezioni e titoli delle singole voci in grassetto, dimensione normale.
 	- Il nome del proprietario non compare da nessuna parte (testi, footer, titolo, meta tag).
@@ -29,9 +29,16 @@ Come è composto ...
 
 ##Software
 
-	Un'app desktop gratuita fatta in JavaFX è in arrivo. Qui verranno pubblicati descrizione, screenshot e download per Windows, macOS e Linux.
+	Un client PostgreSQL scritto in Java: navigazione dello schema, editor SQL con autocompletamento, esecuzione di query, modifica dei dati, diagrammi ER con reverse engineering e generazione DDL, e confronto di schemi — il tutto su archivi PostgreSQL portatili e autonomi.
 
-	A free desktop app built with JavaFX is on its way. Description, screenshots and downloads for Windows, macOS and Linux will be published here.
+	A PostgreSQL client built in Java: schema browsing, a SQL editor with autocomplete, query execution, data editing, ER diagrams with reverse engineering and DDL generation, and schema comparison — all against self-contained portable PostgreSQL archives.
+
+
+##Download
+
+	I download per Windows e Linux (pacchetto .deb per Debian, Ubuntu e derivate) saranno disponibili qui a breve.
+
+	Downloads for Windows and Linux (.deb package for Debian, Ubuntu and derivatives) will be available here soon.
 
 
 ##Contact Me

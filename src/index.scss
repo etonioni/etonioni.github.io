@@ -162,6 +162,18 @@ body {
   }
 }
 
+.screenshot {
+  display: block;
+  margin-top: $spacing-07;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid theme.$border-subtle-01;
+  }
+}
+
 .note {
   margin-bottom: $spacing-09;
 

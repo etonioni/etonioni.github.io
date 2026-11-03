@@ -15,10 +15,11 @@ import {
 } from '@carbon/react';
 import { useState } from 'react';
 import { Email } from '@carbon/icons-react';
-import { contact, profile, software } from './content.js';
+import { contact, download, profile, software } from './content.js';
 
 const SECTIONS = [
   { id: 'software', label: 'Software' },
+  { id: 'download', label: 'Download' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -130,6 +131,26 @@ export default function App() {
         <Section id="software" title="Software">
           <Column sm={4} md={8} lg={12}>
             <Blocks blocks={software.body} />
+            {software.screenshot && (
+              <a
+                className="screenshot"
+                href={`${import.meta.env.BASE_URL}${software.screenshot.src}`}
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}${software.screenshot.src}`}
+                  alt={software.screenshot.alt}
+                  width={software.screenshot.width}
+                  height={software.screenshot.height}
+                  loading="lazy"
+                />
+              </a>
+            )}
+          </Column>
+        </Section>
+
+        <Section id="download" title="Download">
+          <Column sm={4} md={8} lg={12}>
+            <Blocks blocks={download.body} />
           </Column>
         </Section>
 

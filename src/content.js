@@ -25,14 +25,24 @@ export const profile = {
   headline: 'Simple tools, free to use.',
 };
 
-// Placeholder until the JavaFX app is released: then add name, description,
-// screenshot and download links (GitHub Releases).
 export const software = {
   body: [
     {
-      p: 'A free desktop app built with JavaFX is on its way. Description, screenshots and downloads for Windows, macOS and Linux will be published here.',
+      p: 'A PostgreSQL client built in Java: schema browsing, a SQL editor with autocomplete, query execution, data editing, ER diagrams with reverse engineering and DDL generation, and schema comparison — all against self-contained portable PostgreSQL archives.',
     },
   ],
+  // Served from public/ at the site root.
+  screenshot: {
+    src: 'postgre-fx.png',
+    alt: 'PostgresFx main window: database tree on the left, SQL editor and query results table on the right.',
+    width: 1627,
+    height: 1102,
+  },
+};
+
+// Placeholder until the app is released: then add the download links.
+export const download = {
+  body: [{ p: 'Downloads for Windows and Linux (.deb package for Debian, Ubuntu and derivatives) will be available here soon.' }],
 };
 
 export const contact = {
